@@ -15,10 +15,10 @@ public class StudentRegFormTests extends TestBase implements HelperStudent {
 
     @Test
     public void StudentRegFormPositiveTest(){
-        StudentDTO student = new StudentDTO("Frodo", "Baggins", "frodobaggins@mail.com","MALE","1234567890",
-                "11 Sep 2021","Math,Physics","sport","J.Washington street, 10","Washington", "New York");
+        StudentDTO student = new StudentDTO("Frodo", "Baggins", "frodobaggins@mail.com","Male","1234567890",
+                "11 Sep 2021","Maths,Physics","Sports,Music","J.Washington street, 10","Washington", "New York");
         fillStudentForm(student);
-        pause(3);
+        //pause(3);
     }
 
 }
