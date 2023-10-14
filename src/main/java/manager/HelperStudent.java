@@ -1,9 +1,8 @@
 package manager;
 
 import models.StudentDTO;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
+import models.StudentDTOLombok;
+import org.openqa.selenium.*;
 
 public interface HelperStudent extends HelperBase {
 
@@ -37,7 +36,44 @@ public interface HelperStudent extends HelperBase {
         selectHobby(student.getHobbies());
         loadPicture();
 
+        type(By.id("currentAddress"), student.getAddress());
+
+        typeState(student.getState());
+        typeCity(student.getCity());
+
     }
+
+    default void fillStudentForm(StudentDTOLombok student){
+        type(By.id("firstName"), student.getFirstName());
+        type(By.id("lastName"), student.getLastName());
+        type(By.id("userEmail"), student.getEmail());
+
+        selectGender(student.getGender());
+        type(By.id("userNumber"), student.getMobile());
+
+        //type(By.id("dateOfBirthInput"), student.getDateOfB());
+        typeBDay(student.getDateOfB());
+        addSubject(student.getSubject());
+        selectHobby(student.getHobbies());
+        loadPicture();
+
+        type(By.id("currentAddress"), student.getAddress());
+
+        typeState(student.getState());
+        typeCity(student.getCity());
+    }
+
+    default void typeCity(String city){
+        driver.findElement(By.id("react-select-4-input")).sendKeys(city);
+        driver.findElement(By.id("react-select-4-input")).sendKeys(Keys.ENTER);
+    }
+
+    default void typeState(String state){
+        driver.findElement(By.id("react-select-3-input")).sendKeys(state);
+        driver.findElement(By.id("react-select-3-input")).sendKeys(Keys.ENTER);
+    }
+
+
 
     default void loadPicture() {
         driver.findElement(By.id("uploadPicture")).
@@ -89,5 +125,28 @@ public interface HelperStudent extends HelperBase {
         } else {
             click(By.xpath("//label[@for='gender-radio-3']"));
         }
+    }
+
+    default void clickButtonSubmit(){
+        click(By.id("submit"));
+    }
+
+    default void clickButtonCloseByJs(){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("document.querySelector('#closeLargeModal').click()");
+    }
+
+    default boolean isElementPresent_Thanks_for_submitting(){
+        return isElementPresent(By.id("example-modal-sizes-title-lg"));
+    }
+
+    default void clickButtonCloseByRectangle(){
+        WebElement element = driver.findElement(By.id("closeLargeModal"));
+        Rectangle rectangle = element.getRect();
+        int x = rectangle.getX();
+        int y = rectangle.getY();
+        int w = rectangle.getWidth();
+        int h = rectangle.getHeight();
+        System.out.println("x= "+x+ " y= "+y+ " w= "+w+ " h= "+h);
     }
 }

@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8af1f608-c54c-4d12-9f1e-003173aa82b6" name="Changes" comment="added appmanager, helpers, started fillStForm">
+    <list default="true" id="8af1f608-c54c-4d12-9f1e-003173aa82b6" name="Changes" comment="added methods in HelperStudent">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manager/AppManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/AppManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperStudent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/StudentRegFormTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/StudentRegFormTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +46,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AlexAksioma&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="c7a2fb1f-4257-43d7-b32b-1181a547cd89" />
+        <option name="url" value="https://github.com/AlexAksioma/QA_20_DemoQA.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -58,14 +71,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/QA_Auto_Projects/QA_20/QA_20_DemoQA"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/QA_Auto_Projects/MyProject/MyDemoQA&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Gradle.StudentRegFormTests.StudentRegFormPositiveTest">
     <configuration name="Cssxpath.textBox" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -81,6 +94,30 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;cssxpathlocators.Cssxpath.textBox&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="StudentRegFormTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.StudentRegFormTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -118,6 +155,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.StudentRegFormTests.StudentRegFormPositiveTest" />
+        <item itemvalue="Gradle.StudentRegFormTests" />
         <item itemvalue="Gradle.Cssxpath.textBox" />
       </list>
     </recent_temporary>
@@ -155,12 +193,21 @@
       <option name="project" value="LOCAL" />
       <updated>1696762043505</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added methods in HelperStudent">
+      <option name="closed" value="true" />
+      <created>1696934774133</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1696934774133</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added cssxpath class" />
     <MESSAGE value="added appmanager, helpers, started fillStForm" />
-    <option name="LAST_COMMIT_MESSAGE" value="added appmanager, helpers, started fillStForm" />
+    <MESSAGE value="added methods in HelperStudent" />
+    <option name="LAST_COMMIT_MESSAGE" value="added methods in HelperStudent" />
   </component>
 </project>
