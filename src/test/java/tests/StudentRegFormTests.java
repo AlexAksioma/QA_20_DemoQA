@@ -46,7 +46,7 @@ public class StudentRegFormTests extends TestBase implements HelperStudent {
     public void afterMethod(){
         pause(3);
         clickButtonCloseByRectangle();
-        clickButtonCloseByJs();
+        //clickButtonCloseByJs();
     }
 
 }

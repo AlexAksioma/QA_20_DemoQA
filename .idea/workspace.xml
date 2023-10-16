@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8af1f608-c54c-4d12-9f1e-003173aa82b6" name="Changes" comment="added methods in HelperStudent">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperStudent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/StudentRegFormTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/StudentRegFormTests.java" afterDir="false" />
     </list>
@@ -76,7 +75,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/QA_Auto_Projects/MyProject/MyDemoQA&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/QA_Auto_Projects/QA_20/QA_20_DemoQA&quot;
   }
 }</component>
   <component name="RunManager" selected="Gradle.StudentRegFormTests.StudentRegFormPositiveTest">
@@ -201,7 +200,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696934774133</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added methods in HelperStudent">
+      <option name="closed" value="true" />
+      <created>1697294433783</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1697294433783</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

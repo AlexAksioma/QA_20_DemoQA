@@ -3,6 +3,7 @@ package manager;
 import models.StudentDTO;
 import models.StudentDTOLombok;
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 
 public interface HelperStudent extends HelperBase {
 
@@ -148,5 +149,7 @@ public interface HelperStudent extends HelperBase {
         int w = rectangle.getWidth();
         int h = rectangle.getHeight();
         System.out.println("x= "+x+ " y= "+y+ " w= "+w+ " h= "+h);
+        Actions actions = new Actions(driver);
+        actions.moveToElement(element).click().perform();
     }
 }
