@@ -1,9 +1,8 @@
 package cssxpathlocators;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 public class Cssxpath {
@@ -20,7 +19,16 @@ public class Cssxpath {
         WebElement textArea = driver.findElement(By.cssSelector("[placeholder='Current Address']"));
         System.out.println(textArea.getTagName());
 
-        driver.quit();
+        Point pointInputName = inputName.getLocation();
+
+        System.out.println("x1= "+ inputName.getLocation().getX()+" y1="+inputName.getLocation().getY());
+        System.out.println("x2= "+ textArea.getLocation().getX()+" y2="+textArea.getLocation().getY());
+        Rectangle rectangle = inputName.getRect();
+        System.out.println("x1rect = "+rectangle.getX()+" y1rect="+rectangle.getY()+" weight="+rectangle.getWidth()+" height="+rectangle.getHeight());
+        Actions actions = new Actions(driver);
+        actions.moveToElement(inputName,0,-270).click().perform();
+        //actions.moveToElement(inputName, rectangle.getWidth()/2, -270).click().perform();
+        //driver.quit();
     }
 
     @Test

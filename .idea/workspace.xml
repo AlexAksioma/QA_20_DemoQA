@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8af1f608-c54c-4d12-9f1e-003173aa82b6" name="Changes" comment="added methods in HelperStudent">
+    <list default="true" id="8af1f608-c54c-4d12-9f1e-003173aa82b6" name="Changes" comment="added method click by rectangle">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/manager/HelperStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/HelperStudent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cssxpathlocators/Cssxpath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cssxpathlocators/Cssxpath.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/StudentRegFormTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/StudentRegFormTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,6 +79,11 @@
     &quot;last_opened_file_path&quot;: &quot;C:/QA_Auto_Projects/QA_20/QA_20_DemoQA&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\QA_Auto_Projects\QA_20\QA_20_DemoQA\src\test\resources" />
+    </key>
+  </component>
   <component name="RunManager" selected="Gradle.StudentRegFormTests.StudentRegFormPositiveTest">
     <configuration name="Cssxpath.textBox" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -154,8 +160,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.StudentRegFormTests.StudentRegFormPositiveTest" />
-        <item itemvalue="Gradle.StudentRegFormTests" />
         <item itemvalue="Gradle.Cssxpath.textBox" />
+        <item itemvalue="Gradle.StudentRegFormTests" />
       </list>
     </recent_temporary>
   </component>
@@ -208,13 +214,22 @@
       <option name="project" value="LOCAL" />
       <updated>1697294433783</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added method click by rectangle">
+      <option name="closed" value="true" />
+      <created>1697443263531</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1697443263531</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added cssxpath class" />
     <MESSAGE value="added appmanager, helpers, started fillStForm" />
     <MESSAGE value="added methods in HelperStudent" />
-    <option name="LAST_COMMIT_MESSAGE" value="added methods in HelperStudent" />
+    <MESSAGE value="added method click by rectangle" />
+    <option name="LAST_COMMIT_MESSAGE" value="added method click by rectangle" />
   </component>
 </project>

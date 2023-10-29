@@ -48,18 +48,14 @@ public interface HelperStudent extends HelperBase {
         type(By.id("firstName"), student.getFirstName());
         type(By.id("lastName"), student.getLastName());
         type(By.id("userEmail"), student.getEmail());
-
         selectGender(student.getGender());
         type(By.id("userNumber"), student.getMobile());
-
-        //type(By.id("dateOfBirthInput"), student.getDateOfB());
+         //type(By.id("dateOfBirthInput"), student.getDateOfB());
         typeBDay(student.getDateOfB());
         addSubject(student.getSubject());
         selectHobby(student.getHobbies());
         loadPicture();
-
         type(By.id("currentAddress"), student.getAddress());
-
         typeState(student.getState());
         typeCity(student.getCity());
     }
@@ -82,7 +78,7 @@ public interface HelperStudent extends HelperBase {
     }
 
     default void selectHobby(String hobbies) {
-        String [] hobbiesArray = hobbies.split(",");
+        String [] hobbiesArray = hobbies.split(";");
         for (String element:hobbiesArray) {
             switch (element) {
                 case "Sports":
@@ -100,7 +96,7 @@ public interface HelperStudent extends HelperBase {
     }
 
     default void addSubject(String subject) {
-        String[] subjectsArray = subject.split(",");
+        String[] subjectsArray = subject.split(";");
         WebElement sub = driver.findElement(By.id("subjectsInput"));
         sub.click();
         for (String element : subjectsArray) {
